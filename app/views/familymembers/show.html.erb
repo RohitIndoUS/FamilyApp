@@ -1,0 +1,30 @@
+
+<div class="jumbotron bg-info text-dark form-control">
+  <h1>Member Details</h1>
+  <hr class="my-4">
+<p>
+  <strong>Name:</strong>
+  <%= @familymember.name %>
+</p>
+<p>
+  <strong>Gender:</strong>
+  <%= @familymember.gender %>
+</p>
+<p>
+  <strong>Age:</strong>
+  <%= @familymember.age %>
+</p>
+<p>
+  <strong>Address:</strong>
+  <%= @familymember.address %>
+</p>
+<hr class="my-4">
+<%= link_to 'Edit', edit_familymember_path(@familymember), class:"btn btn-danger" %>
+<%= link_to 'Back', familymembers_path, class:"btn btn-secondary" %>
+</div>
+
+
+
+
+
+
